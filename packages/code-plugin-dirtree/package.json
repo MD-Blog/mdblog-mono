@@ -1,0 +1,24 @@
+{
+  "name": "@mdblog/code-plugin-dirtree",
+  "version": "2.0.3",
+  "description": "@mdblog/code-plugin-dirtree",
+  "repository": {},
+  "files": [
+    "dist",
+    "build/locally.config.js"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "mdblog-build",
+    "link": "yarn link",
+    "unlink": "yarn unlink"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jstree": "^3.3.8"
+  },
+  "devDependencies": {
+    "@mdblog/builder": "^2.0.1"
+  }
+}

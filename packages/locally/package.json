@@ -1,0 +1,24 @@
+{
+  "name": "@mdblog/locally",
+  "description": "@mdblog/locally",
+  "version": "2.0.0",
+  "main": "index.js",
+  "bin": {
+    "mdblog-locally": "bin/mdblog-locally"
+  },
+  "files": [
+    "bin",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "echo locally",
+    "link": "yarn link",
+    "unlink": "yarn unlink"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "blueimp-md5": "^2.10.0",
+    "fs-extra": "^7.0.1",
+    "glob": "^7.1.4"
+  }
+}

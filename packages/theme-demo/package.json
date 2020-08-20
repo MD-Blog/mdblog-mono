@@ -1,0 +1,18 @@
+{
+  "name": "@mdblog/theme-demo",
+  "version": "2.0.0",
+  "description": "@mdblog/theme-demo",
+  "repository": {},
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "mdblog-build",
+    "link": "yarn link",
+    "unlink": "yarn unlink"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/runtime": "^7.4.4",
+    "@mdblog/builder": "^2.0.1"
+  }
+}

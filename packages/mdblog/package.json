@@ -1,0 +1,39 @@
+{
+  "name": "@mdblog/mdblog",
+  "version": "2.0.11",
+  "description": "mdblog",
+  "repository": {},
+  "main": "dist/main.js",
+  "files": [
+    "dist",
+    "build/locally.config.js"
+  ],
+  "scripts": {
+    "build": "mdblog-build",
+    "link": "yarn link",
+    "unlink": "yarn unlink"
+  },
+  "author": "vaniship@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "blueimp-md5": "^2.10.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.16.0",
+    "font-awesome": "^4.7.0",
+    "he": "^1.2.0",
+    "javascript-state-machine": "^3.1.0",
+    "jquery": "^3.4.0",
+    "jsonic": "^0.3.1",
+    "jsonp": "^0.2.1",
+    "marked": "^0.6.2",
+    "prismjs": "^1.14.0",
+    "qs": "^6.7.0",
+    "systemjs": "^3.1.6",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@mdblog/builder": "^2.0.2",
+    "standard": "^12.0.1"
+  }
+}

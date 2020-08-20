@@ -1,0 +1,25 @@
+{
+  "name": "@mdblog/code-plugin-mermaid",
+  "version": "2.0.3",
+  "description": "@mdblog/code-plugin-mermaid",
+  "repository": {},
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "build/locally.config.js"
+  ],
+  "scripts": {
+    "build": "mdblog-build",
+    "link": "yarn link",
+    "unlink": "yarn unlink"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^4.13.0",
+    "mermaid": "^8.5.0"
+  },
+  "devDependencies": {
+    "@mdblog/builder": "^2.0.1"
+  }
+}

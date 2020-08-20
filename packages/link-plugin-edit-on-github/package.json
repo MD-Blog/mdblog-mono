@@ -1,0 +1,18 @@
+{
+  "name": "@mdblog/link-plugin-edit-on-github",
+  "version": "2.1.0",
+  "description": "@mdblog/link-plugin-edit-on-github",
+  "repository": {},
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "mdblog-build",
+    "link": "yarn link",
+    "unlink": "yarn unlink"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@mdblog/builder": "^2.0.1"
+  }
+}

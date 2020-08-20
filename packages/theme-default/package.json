@@ -1,0 +1,18 @@
+{
+  "name": "@mdblog/theme-default",
+  "version": "2.0.1",
+  "description": "@mdblog/theme-default",
+  "repository": {},
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "mdblog-build",
+    "link": "yarn link",
+    "unlink": "yarn unlink"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@mdblog/builder": "^2.0.1"
+  }
+}

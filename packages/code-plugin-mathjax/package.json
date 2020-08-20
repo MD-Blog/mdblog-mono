@@ -1,0 +1,24 @@
+{
+  "name": "@mdblog/code-plugin-mathjax",
+  "version": "2.0.0",
+  "description": "@mdblog/code-plugin-mathjax",
+  "repository": {},
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "build/locally.config.js"
+  ],
+  "scripts": {
+    "build": "mdblog-build",
+    "link": "yarn link",
+    "unlink": "yarn unlink"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mathjax": "^2.7.5"
+  },
+  "devDependencies": {
+    "@mdblog/builder": "^2.0.1"
+  }
+}

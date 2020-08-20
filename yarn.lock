@@ -81,7 +81,7 @@
     "@antv/util" "~2.0.0"
     detect-browser "^4.6.0"
 
-"@antv/g6@^3.0.4":
+"@antv/g6@^3.6.1":
   version "3.6.1"
   resolved "https://registry.npm.taobao.org/@antv/g6/download/@antv/g6-3.6.1.tgz#c450b6254aa8a5ac577237ec9be2bd3135c1810e"
   integrity sha1-xFC2JUqopaxXcjfsm+K9MTXBgQ4=

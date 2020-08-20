@@ -96,7 +96,8 @@
           height: parseInt(options.height) || 300,
           plugins: [ ],
           modes: {
-            default: [{
+            default: [],
+            explorer: [{
               type: 'collapse-expand',
               onChange(item, collapsed) {
                 const data = item.getModel()
@@ -133,6 +134,15 @@
               getHGap() { return 80 }
             })
           }
+        })
+        let mode = 'default'
+        graph.on('dblclick', () => {
+          if (mode == 'explorer') {
+            mode = 'default'
+          } else {
+            mode = 'explorer'
+          }
+          graph.setMode(mode)
         })
         try {
           graph.data(jsonic(he.decode(this.$refs.source.innerHTML)))

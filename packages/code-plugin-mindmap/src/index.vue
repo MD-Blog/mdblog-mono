@@ -1,6 +1,12 @@
 <template>
   <BTabs small card>
-    <BTab title="Graph" active><div class="g6-mindmap" ref="graph"></div></BTab>
+    <BTab title="Graph" active>
+      <div tabindex="1000"
+        @focus="onFocus"
+        @blur="onBlur"
+        style="outline-width: thin"
+        class="g6-mindmap" ref="graph"></div>
+    </BTab>
     <BTab title="Source"><pre ref="source"><slot /></pre></BTab>
   </BTabs>
 </template>
@@ -135,15 +141,7 @@
             })
           }
         })
-        let mode = 'default'
-        graph.on('dblclick', () => {
-          if (mode == 'explorer') {
-            mode = 'default'
-          } else {
-            mode = 'explorer'
-          }
-          graph.setMode(mode)
-        })
+        this.graph = graph
         try {
           graph.data(jsonic(he.decode(this.$refs.source.innerHTML)))
           graph.render()
@@ -152,6 +150,18 @@
           console.log('Draw mindmap error:', e)
         }
       })
+    },
+    methods: {
+      onFocus () {
+        if (this.graph) {
+          this.graph.setMode('explorer')
+        }
+      },
+      onBlur () {
+        if (this.graph) {
+          this.graph.setMode('default')
+        }
+      }
     }
   }
 </script>

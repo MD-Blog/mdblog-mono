@@ -46,5 +46,5 @@
 </script>
 
 <style scoped>
-  @import '../node_modules/orgchart/dist/css/jquery.orgchart.min.css';
+  @import './node_modules/orgchart/dist/css/jquery.orgchart.min.css';
 </style>

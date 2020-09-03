@@ -12,9 +12,7 @@
     "mdblog-build": "bin/mdblog-build"
   },
   "scripts": {
-    "build": "echo builder",
-    "link": "yarn link",
-    "unlink": "yarn unlink"
+    "build": "echo builder"
   },
   "author": "",
   "license": "MIT",

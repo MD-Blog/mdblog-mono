@@ -65,9 +65,9 @@
 </script>
 
 <style scoped>
-  @import '../node_modules/jstree/dist/themes/default/style.css';
+  @import './node_modules/jstree/dist/themes/default/style.css';
 </style>
 
 <style>
-  @import '../node_modules/@mdblog/code-plugin-dirtree/dist/style/index.css';
+  @import './node_modules/@mdblog/code-plugin-dirtree/dist/style/index.css';
 </style>

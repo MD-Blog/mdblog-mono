@@ -34,7 +34,7 @@ module.exports = (task, env) => {
           ['@babel/env', { modules: false }]
         ],
         plugins: [
-          '@babel/external-helpers',
+          // '@babel/external-helpers',
           '@babel/transform-runtime',
           '@babel/syntax-dynamic-import'
         ],
@@ -58,7 +58,7 @@ module.exports = (task, env) => {
   }
 
   const inputOptionsMinify = { ...inputOptions }
-  // inputOptionsMinify.plugins = [...inputOptionsMinify.plugins, terser()]
+  inputOptionsMinify.plugins = [...inputOptionsMinify.plugins, terser()]
 
   const size = code => filesize(Buffer.byteLength(code))
 
